@@ -14,7 +14,6 @@ This is a **Library API** built with Django and Django REST Framework (DRF). The
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Authentication](#authentication)
-- [License](#license)
 
 ## Installation
 
@@ -185,4 +184,29 @@ You can use tools like Postman or curl to test the API endpoints.
     "author": "F. Scott Fitzgerald",
     "isbn": "9780743273565"
 }
+```
+
+#### Delete a book
+
+- DELETE /api/books/{id}/
+- Request Body: None
+
+- Response: No Content
+
+## Authentication
+
+### JWT Authentication
+
+The API uses JWT (JSON Web Token) authentication for secure communication. Upon successful login, a token pair (access and refresh tokens) is issued. These tokens must be included in the
+
+##### Authorization header as follows:
+
+```text
+Authorization: Bearer <access_token>
+```
+
+##### For example, you can use it in a GET request to access a protected endpoint:
+
+```bash
+curl -H "Authorization: Bearer <access_token>" http://localhost:8000/api/protected-endpoint/
 ```
