@@ -76,7 +76,7 @@ You can use tools like Postman or curl to test the API endpoints.
     "username": "john_doe",
     "email": "john@example.com",
     "password": "password123"
-    }
+}
 ```
 
 - Response:
@@ -84,7 +84,8 @@ You can use tools like Postman or curl to test the API endpoints.
 ```bash
 {
     "message": "Registration Successful",
-    "user": {
+    "user":
+    {
         "username": "newuser",
         "email": "newuser@example.com"
     }
