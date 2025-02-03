@@ -78,3 +78,15 @@ You can use tools like Postman or curl to test the API endpoints.
     "password": "password123"
     }
 ```
+
+- Response:
+
+```bash
+{
+    "message": "Registration Successful",
+    "user": {
+        "username": "newuser",
+        "email": "newuser@example.com"
+    }
+}
+```
