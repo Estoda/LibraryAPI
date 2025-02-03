@@ -59,3 +59,7 @@ python manage.py runserver
 ```
 
 ## Usage
+
+The API can be accessed at http://localhost:8000/.
+
+You can use tools like Postman or curl to test the API endpoints.
