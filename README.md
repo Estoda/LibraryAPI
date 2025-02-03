@@ -114,3 +114,33 @@ You can use tools like Postman or curl to test the API endpoints.
     "isbn": "9780743273565"
 }
 ```
+
+### 1. Logout
+
+- POST /api/logout/
+- Request Body: None
+
+- Response: 200 OK
+
+### 1. Login
+
+- POST /api/login/
+- Request Body:
+
+```bash
+{
+    "username": "newuser",
+    "password": "password123"
+}
+```
+
+- Response:
+
+```bash
+{
+    "id": 1,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "9780743273565"
+}
+```
