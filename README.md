@@ -92,7 +92,7 @@ You can use tools like Postman or curl to test the API endpoints.
 }
 ```
 
-### 1. Login
+### 2. Login
 
 - POST /api/login/
 - Request Body:
@@ -115,22 +115,23 @@ You can use tools like Postman or curl to test the API endpoints.
 }
 ```
 
-### 1. Logout
+### 3. Logout
 
 - POST /api/logout/
 - Request Body: None
 
 - Response: 200 OK
 
-### 1. Login
+### 4. CRUD Operations on Books (Example endpoints)
 
-- POST /api/login/
+- POST /api/books/
 - Request Body:
 
 ```bash
 {
-    "username": "newuser",
-    "password": "password123"
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "9780743273565"
 }
 ```
 
@@ -143,4 +144,21 @@ You can use tools like Postman or curl to test the API endpoints.
     "author": "F. Scott Fitzgerald",
     "isbn": "9780743273565"
 }
+```
+
+list all books
+
+- GET /api/books/
+- Response:
+
+```bash
+[
+    {
+        "id": 1,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "isbn": "9780743273565"
+    },
+    ...
+]
 ```
