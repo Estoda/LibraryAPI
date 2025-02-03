@@ -71,14 +71,10 @@ You can use tools like Postman or curl to test the API endpoints.
 - POST /api/register/
 - Request Body:
 
-- ```bash
-  {
-      "username": "john_doe",
-      "email": "john@example.com",
-      "password": "password123"
-      }
-  ```
-
-```
-
+```bash
+{
+    "username": "john_doe",
+    "email": "john@example.com",
+    "password": "password123"
+    }
 ```
