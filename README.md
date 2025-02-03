@@ -73,8 +73,8 @@ You can use tools like Postman or curl to test the API endpoints.
 
 ```bash
 {
-    "username": "john_doe",
-    "email": "john@example.com",
+    "username": "newuser",
+    "email": "newuser@example.com",
     "password": "password123"
 }
 ```
@@ -89,5 +89,28 @@ You can use tools like Postman or curl to test the API endpoints.
         "username": "newuser",
         "email": "newuser@example.com"
     }
+}
+```
+
+### 1. Login
+
+- POST /api/login/
+- Request Body:
+
+```bash
+{
+    "username": "newuser",
+    "password": "password123"
+}
+```
+
+- Response:
+
+```bash
+{
+    "id": 1,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "9780743273565"
 }
 ```
