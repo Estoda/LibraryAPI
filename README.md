@@ -162,3 +162,27 @@ You can use tools like Postman or curl to test the API endpoints.
     ...
 ]
 ```
+
+#### Update a book
+
+- PUT /api/books/{id}/
+- Request Body:
+
+```bash
+{
+    "title": "The Great Gatsby (Updated)",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "9780743273565"
+}
+```
+
+- Response:
+
+```bash
+{
+    "id": 1,
+    "title": "The Great Gatsby (Updated)",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "9780743273565"
+}
+```
