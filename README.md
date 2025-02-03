@@ -26,3 +26,10 @@ Follow these steps to get the project up and running.
 git clone https://github.com/Estoda/LibraryAPI
 cd LibraryAPI
 ```
+
+### 1. Set up a virtual environment
+
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+```
