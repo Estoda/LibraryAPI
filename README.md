@@ -27,9 +27,35 @@ git clone https://github.com/Estoda/LibraryAPI
 cd LibraryAPI
 ```
 
-### 1. Set up a virtual environment
+### 2. Set up a virtual environment
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Migrate the database
+
+```bash
+python manage.py migrate
+```
+
+### 5. Create a superuser (optional)
+
+```bash
+python manage.py createsuperuser
+```
+
+### 6. Run the development server
+
+```bash
+python manage.py runserver
+```
+
+## Usage
