@@ -63,3 +63,18 @@ python manage.py runserver
 The API can be accessed at http://localhost:8000/.
 
 You can use tools like Postman or curl to test the API endpoints.
+
+## API Endpoints
+
+### 1. Register a new user
+
+- POST /api/register/
+- Request Body:
+
+```bash
+{
+    "username": "john_doe",
+    "email": "john@example.com",
+    "password": "password123"
+    }
+```
